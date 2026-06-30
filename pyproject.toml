@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tessera"
+version = "0.1.0"
+description = "A sensor-data layer on Apache Parquet and Apache DataFusion"
+authors = [{ name = "Silvio Revelli" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyarrow>=14",
+    "datafusion>=40",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pandas"]
+
+[project.urls]
+Homepage = "https://github.com/silviorevelli/tessera-physical"
+
+[tool.setuptools.packages.find]
+include = ["tessera*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

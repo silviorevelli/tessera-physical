@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# Demo-generated data (local data lake)
+datalake/
+datalake_sync/
+datalake_platform/

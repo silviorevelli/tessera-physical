@@ -1,0 +1,5 @@
+# Normalizza i fine riga: LF nel repository per tutti i file di testo
+* text=auto eol=lf
+
+# File binari: nessuna normalizzazione
+*.parquet binary
